@@ -1,0 +1,259 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general del sitio */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: #f4f4f4; /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mínimo 100% de la altura de la ventana */
+}
+
+/* Estilos del Header */
+header {
+    background-color: #343a40; /* Color de fondo del header */
+    padding: 5px 0; /* Espaciado en el header */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* altura del header */
+    z-index: 1000;
+    background-color: #333; /* color de fondo del header */
+}
+
+body {
+    padding-top: 80px; /* este valor debe ser igual a la altura del header */
+}
+
+/* Estilos de los enlaces del menú de navegación */
+.nav-link {
+    color: #ffffff; /* Color de texto de los enlaces */
+    font-weight: bold; 
+    font-family: 'Playfair Display', serif; /* Negrita */
+}
+
+/* Cambios en los enlaces al pasar el ratón */
+.nav-link:hover {
+    color: #ef7c01; /* Color dorado al pasar el ratón */
+}
+
+/* Estilo del Carrusel */
+.carousel {
+    margin-bottom: 80px;
+}
+
+.carousel-item img {
+    height: 50vh; /* Altura del carrusel */
+    object-fit: cover; /* Ajuste de la imagen */
+}
+
+/* Estilos de las Cards */
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
+}
+
+.card img {
+    height: 300px; /* Altura específica para imágenes de las cards */
+    object-fit: cover;
+}
+
+/* Estilos de la Galería */
+.img-thumbnail {
+    transition: transform 0.3s; /* Efecto de transición */
+    cursor: pointer;
+    width: 100%; /* Ajusta la imagen al ancho de la columna */
+    height: 300px; /* Define una altura uniforme */
+    object-fit: cover;
+    margin-bottom: 30px /* Cambia el cursor a puntero */
+}
+.col-md-4 {
+    padding: 20px; /* Espacio entre las columnas */
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
+}
+
+/* Estilo para la sección de acordeón */
+.accordion .card {
+    margin-bottom: 10px;
+}
+
+/* Footer siempre en la parte inferior de la página */
+.content {
+    flex: 1; /* Permite que el contenido ocupe el espacio disponible */
+}
+
+/* Estilos del Footer */
+footer {
+    background-color:  #728393; /* Color del footer igual al header */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0; /* Espaciado interno */
+    margin-top: auto;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif; /* Empuja el footer a la parte inferior */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Estilos para el enlace activo */
+.nav-link.active {
+    font-weight: bold; /* Negrita */
+    color: #f98100; /* Color dorado o el que prefieras */
+    text-decoration: underline; /* Subrayado opcional */
+}
+/* Estilo para los botones de color naranja */
+.btn-orange {
+    background-color: #f98100; /* Color naranja */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 3px 7px; /* Tamaño de padding */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+
+.btn-orange:hover {
+    background-color: #f98100; /* Un tono más oscuro al pasar el ratón */
+}
+
+/* Estilos del Formulario */
+form {
+    background-color: #ffffff; /* Fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Sombra del formulario */
+}
+
+/* Estilos de los Inputs y Textareas */
+input, textarea {
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ced4da; /* Color del borde */
+}
+
+input:focus, textarea:focus {
+    border-color: #80bdff; /* Color del borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilos del Mapa */
+/* Estilo para pantallas pequeñas */
+@media (max-width: 576px) {
+    #map {
+        max-width: 90%; /* Ancho máximo del mapa en pantallas pequeñas */
+    }
+}
+/* Estilo para pantallas pequeñas */
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+    .card {
+        margin-bottom: 20px; /* Espaciado entre cards en pantallas pequeñas */
+    }
+}
+
+/* Estilo para el título del sitio */
+h1 {
+    font-family: 'Playfair Display', serif; /* Fuente para el título */
+    font-size: 24px; /* Tamaño del título */
+    color: #efefef; /* Color del título */
+    margin: 20px 0; /* Margen */
+}
+
+/* Estilo para el subtítulo */
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Fuente para el subtítulo */
+    font-size: 24px; /* Tamaño del subtítulo */
+    color: #e1dada; /* Color del subtítulo */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.social-icon {
+    margin-right: 15px; /* Espaciado entre los iconos */
+}
+
+.social-icon img {
+    transition: transform 0.3s; /* Efecto de transición para hover */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+}
+
+/* Estilos del mapa */
+#map {
+    border-radius: 5px; /* Bordes redondeados */
+    height: 150px; /* Cambia la altura del mapa según tus necesidades */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho del contenedor */
+    max-width: 600px; /* Ancho máximo del mapa */
+    margin: 20px auto; 
+     /* Asegúrate de que ocupe todo el ancho del contenedor */
+}
+
+/* Estilos de la tabla */
+.table {
+    margin-top: 20px;
+    background-color: #ffffff;
+    max-width: 600px; /* Ancho máximo de la tabla */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho del contenedor */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: auto; /* Centra la tabla */
+}
+
+.table th {
+    background-color: #343a40; /* Color de fondo del encabezado de la tabla */
+    color: white; /* Color del texto del encabezado de la tabla */
+}
+
+.table td {
+    vertical-align: middle; /* Alinear verticalmente el contenido */
+    padding: 8px 12px; /* Padding en celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Ajuste del tamaño de la tabla en pantallas pequeñas */
+@media (max-width: 576px) {
+    .table {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+}
+
+/* Estilo para los encabezados */
+h2, h3 {
+    color: #343a40; /* Color de los encabezados */
+    font-family: 'Arial', sans-serif; /* Fuente adecuada */
+}
+h3 {
+    color: #343a40; /* Color de los encabezados */
+    font-family: 'Arial', sans-serif;
+text-align: center;
+}

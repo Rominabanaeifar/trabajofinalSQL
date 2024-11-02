@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Opcional: archivo de CSS personalizado -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="container-fluid bg-dark text-white fixed-top">
+        
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <h1>Interior Design Studio</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link text-white">Galería</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrusel de Imágenes -->
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/imagen4.jpg" class="d-block w-100" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/imagen5.jpg" class="d-block w-100" alt="Imagen 5">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Sección de Cards -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/card1.jpg" class="card-img-top" alt="Proyectos Recientes">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyectos Recientes</h5>
+                        <p class="card-text">Descubre cómo transformamos espacios ordinarios en obras maestras de diseño.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/card2.jpg" class="card-img-top" alt="Estilos de Diseño">
+                    <div class="card-body">
+                        <h5 class="card-title">Estilos de Diseño</h5>
+                        <p class="card-text">Explora nuestros estilos de diseño: desde el minimalismo moderno hasta el encanto rústico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/card3.jpg" class="card-img-top" alt="Nuestros Servicios">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuestros Servicios</h5>
+                        <p class="card-text">Ofrecemos servicios personalizados de diseño de interiores, adaptados a tus necesidades y gustos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/card4.jpg" class="card-img-top" alt="Lo Que Dicen Nuestros Clientes">
+                    <div class="card-body">
+                        <h5 class="card-title">Lo Que Dicen Nuestros Clientes</h5>
+                        <p class="card-text">Nuestros clientes valoran nuestro enfoque personalizado y la atención a los detalles. ¡Lee sus historias!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elemento Bootstrap a Elección (Ejemplo: Accordion) -->
+    <div class="container my-4">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                             Preguntas Frecuentes
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Ofrecemos una variedad de servicios de diseño de interiores, incluyendo diseño personalizado de espacios, asesoría en selección de muebles y colores, y gestión de proyectos de remodelación.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cuánto tiempo toma completar un proyecto?
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                El tiempo de finalización depende del tamaño y la complejidad del proyecto. Generalmente, los proyectos pueden variar desde unas pocas semanas hasta varios meses.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿Trabajan con un presupuesto específico?
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                Sí, trabajamos con diferentes presupuestos. Nos aseguramos de ofrecer opciones y soluciones que se ajusten a tus necesidades económicas sin sacrificar la calidad del diseño.
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    ¿Puedo ver ejemplos de su trabajo anterior?
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+                Por supuesto. Puedes visitar nuestra galería para ver ejemplos de proyectos anteriores y obtener inspiración para tu propio espacio.
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="container-fluid  text-white">
+        <div class="row">
+            <div class="col-md-4">
+                <p>© 2024 Interior Design Studio. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="galeria.html" class="nav-link text-white">Galería</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <img src="images/facebook-icon.png" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <img src="images/twitter-icon.png" alt="Twitter" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
